@@ -1,11 +1,9 @@
-version: "3.5"
-
 services:
   centos:
     image: ubuntu:cppdev
     container_name: ubuntu
     ports:
-      - "22:22" # 22是ssh端口
+      - "6666:22" # 22是ssh端口
       - "873:873" # 873是srync端口
     cap_add:
       - ALL
